@@ -26,7 +26,7 @@ Step 3: Exploratory data analysis and pre-processing
 - Split the into training and testing for appropriate training .
 - Scale the data 
 
-Step 4:  Model: Ridge regression, Decision tree,Randomforest Regressor, GradientBoostingRegressor,Time series
+Step 4:  Model: Ridge regression, Decision tree,Randomforest Regressor, GradientBoostingRegressor,Support Vector Regression,Time series
 step 5: Model evaluation
 - Mean Squared Error (MSE)
 - Mean Absolute Error (MAE)
