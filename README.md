@@ -33,10 +33,10 @@ step 5: Model evaluation
 - Mean Squared Error (MSE)
 - Mean Absolute Error (MAE)
 - R-squared (R2)
--
-step 6: Cross validation
+- Cross validation
 
 ## Results
+Based on these matrics, the Ridge Regression Metrics appears to perform slightly better than the Linear Regression model in terms of both MSE and MAE, while also having a slightly higher R-squared value. This suggests that the Decision Tree Regression model might capture the underlying patterns in this data more effectively. however,we also experiment with other regression algorithms like RandomForestRegressor and GradientBoostingRegressor to see which one performs better for this dataset.Although  Ridge regression model was used for the prediction because of its ability to penalizes coefficients to account for multi-collinearity; it is important to further analyze and  explore feature engineering, hyperparameter tuning, cross-validation, more data cleaning and consider the broader context of this analysis before making a final decision.
 
 ## conclusion
 Based on Machine learning’s ability to offer enhanced accuracy and timely weather predictions,it bring about improvement in various domain including public safety, effective resource allocation, efficient disaster response, increased agricultural output, and valuable insights into the study of climate change. 
