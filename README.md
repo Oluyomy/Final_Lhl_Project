@@ -8,6 +8,7 @@ In this project, data for  Calgary was derived from NOAA using  the airport as t
 - The ultimate goal of this project, is to ensure models were fed with data that allowed us to understand the relationship between different weather variables and subsequently make more accurate predictions. 
 - Make 3, 7, 14 & 90 days weather predictions.
 - To perform cross-validation for the purpose of validating and enhancing model accuracy, the model's predicted outcomes are contrasted with the real-world weather conditions to ascertain improvements.
+- Make 3,7,14, 90 days prediction of weather features.
 
 ## Step 1: Obtaining data
 This dataset is from National Oceanic and Atmospheric Administration (NOAA) API:
