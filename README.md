@@ -27,7 +27,7 @@ Step 3: Exploratory data analysis and pre-processing
 - Detect and handle outliers.
 - Structure the data for efficient analysis.
 - Split the into training and testing for appropriate training .
-- Scale the data 
+
 
 Step 4:  Model: Ridge regression, Decision tree,Randomforest Regressor, GradientBoostingRegressor,Support Vector Regression,Time series analysis.
 step 5: Model evaluation
