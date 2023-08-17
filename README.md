@@ -6,9 +6,10 @@ In this project, data for  Calgary was derived from NOAA using  the airport as t
 ## Project  Goals
 -
 - The ultimate goal of this project, is to ensure models were fed with data that allowed us to understand the relationship between different weather variables and subsequently make more accurate predictions. 
-- Make 3, 7, 14 & 90 days weather predictions.
-- To perform cross-validation for the purpose of validating and enhancing model accuracy, the model's predicted outcomes are contrasted with the real-world weather conditions to ascertain improvements.
-- Make 3,7,14, 90 days prediction of weather features.
+- Make 3, 7, 14 days weather predictions.
+- To perform cross-validation for the purpose of validating and enhancing model accuracy
+- The model's predicted outcomes are contrasted with the real-world weather conditions to ascertain improvements.
+
 
 ## Step 1: Obtaining data
 This dataset is from National Oceanic and Atmospheric Administration (NOAA) API:
@@ -24,12 +25,12 @@ Step 3: Exploratory data analysis and pre-processing
 - summary statistics such as mean, median, and standard deviation for each column of the dataset. 
 - Learn the trend and detect outlier or possible factor that can affect the data output.
 - Create heatmap to take a closer look at the corellation.
-- Detect and handle outliers.
+- Detect and handle missing values and outliers.
 - Structure the data for efficient analysis.
 - Split the into training and testing for appropriate training .
 
 
-Step 4:  Model: Ridge regression, Decision tree,Randomforest Regressor, GradientBoostingRegressor,Support Vector Regression,Time series analysis.
+Step 4:  Model: linear regression,Ridge regression, Decision tree,Randomforest Regressor, GradientBoostingRegressor,Support Vector Regression.
 step 5: Model evaluation
 - Mean Squared Error (MSE)
 - Mean Absolute Error (MAE)
@@ -37,7 +38,8 @@ step 5: Model evaluation
 - Cross validation
 
 ## Results
-Based on these matrics, the Ridge Regression Metrics appears to perform slightly better than the Linear Regression model in terms of both MSE and MAE, while also having a slightly higher R-squared value. This suggests that the Decision Tree Regression model might capture the underlying patterns in this data more effectively. however,we also experiment with other regression algorithms like RandomForestRegressor and GradientBoostingRegressor to see which one performs better for this dataset.Although  Ridge regression model was used for the prediction because of its ability to penalizes coefficients to account for multi-collinearity; it is important to further analyze and  explore feature engineering, hyperparameter tuning, cross-validation, more data cleaning and consider the broader context of this analysis before making a final decision.
+Based on these matrics, the Gradient Boosting regressor Metrics appears to perform slightly better than the Ridge Regression model in terms of both MSE and MAE, while also having a slightly higher R-squared value. This suggests that the Gradient Boosting regressor model captures the underlying patterns in this data more effectively. After hyperparameter tuning, GradientBoostingRegressor  performed better for this dataset.
+Broader context of this analysis explored such as feature engineering, hyperparameter tuning and cross-validation led to improved optimization of the model before making a final decision
 
 ## conclusion
 Based on Machine learning’s ability to offer enhanced accuracy and timely weather predictions,it bring about improvement in various domain including public safety, effective resource allocation, efficient disaster response, increased agricultural output, and valuable insights into the study of climate change. 
@@ -45,8 +47,11 @@ Based on Machine learning’s ability to offer enhanced accuracy and timely weat
 - Complex Data:The data contains multiple predictor variables that interact with each other, this maked identifying  the most critical variables for modelling and forecasting a challenge. 
 - Uncertainty: The possibility of imprecise measurements maked weather forecasting inherently uncertain. In turn, this uncertainty maked it tougher to build accurate ML models and effective weather forecasts. 
 - Data Quality: machine learning accuracy is dependent on the quality and quantity of input data. Although the data was obtained from an API whose data was 94% accurate,however, data completeness and up-to-date can be tricky. 
-- Interpretation  of weather forecasting are often complex  and hard  because ofa lots of parameters attached to the prediction which may in turn build lack of trust in models.
+- Interpretation  of weather forecasting are often complex  and hard  because of lots of parameters attached to the prediction which may in turn build lack of trust in models.
 - Time constrain.
 ## Future goals
 - I will  used data from other weather APIs for better comparison.
+- Exploring time series  prediction using SARIMA (Seasonal ARIMA) which extends the ARIMA model to handle seasonality in the data.
+- Exploring Recurrent neural  network (RNN) which is capable of modelling long-term dependencies in time series data.
+
 
